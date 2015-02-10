@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ApplicationDataStore" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="ApplicationDataStore">
+    <EntitySet Name="Collaborateurs" EntityType="ApplicationDataStore.Collaborateur" store:Type="Tables" Schema="dbo" Table="Collaborateurs" />
+    <EntitySet Name="Commercials" EntityType="ApplicationDataStore.Commercial" store:Type="Tables" Schema="dbo" Table="Commercials" />
+    <EntitySet Name="Missions" EntityType="ApplicationDataStore.Mission" store:Type="Tables" Schema="dbo" Table="Missions" />
+    <AssociationSet Name="Mission_Collaborateur" Association="ApplicationDataStore.Mission_Collaborateur">
+      <End Role="Collaborateur" EntitySet="Collaborateurs" />
+      <End Role="Mission" EntitySet="Missions" />
+    </AssociationSet>
+    <AssociationSet Name="Mission_Commercial" Association="ApplicationDataStore.Mission_Commercial">
+      <End Role="Commercial" EntitySet="Commercials" />
+      <End Role="Mission" EntitySet="Missions" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Collaborateur">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="prenom" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="email" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="portable" Type="nvarchar" MaxLength="255" />
+    <Property Name="Portrait" Type="varbinary(max)" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Commercial">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="nom" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="prenom" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="Grade" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="Mission">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="dateDebut" Type="datetime" Nullable="false" />
+    <Property Name="dateFin" Type="datetime" />
+    <Property Name="nomClient" Type="nvarchar" Nullable="false" MaxLength="255" />
+    <Property Name="posteOccupe" Type="nvarchar" MaxLength="255" />
+    <Property Name="CreatedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Created" Type="datetimeoffset" />
+    <Property Name="ModifiedBy" Type="nvarchar" MaxLength="255" />
+    <Property Name="Modified" Type="datetimeoffset" />
+    <Property Name="RowVersion" Type="rowversion" Nullable="false" StoreGeneratedPattern="Computed" />
+    <Property Name="Mission_Collaborateur" Type="int" Nullable="false" />
+    <Property Name="Mission_Commercial" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="Mission_Collaborateur">
+    <End Role="Collaborateur" Type="ApplicationDataStore.Collaborateur" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="Mission" Type="ApplicationDataStore.Mission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Collaborateur">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Mission">
+        <PropertyRef Name="Mission_Collaborateur" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Mission_Commercial">
+    <End Role="Commercial" Type="ApplicationDataStore.Commercial" Multiplicity="1">
+      <OnDeleteAnnotation Action="Restrict" xmlns="http://schemas.microsoft.com/LightSwitch/2013/edm/annotations" />
+    </End>
+    <End Role="Mission" Type="ApplicationDataStore.Mission" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Commercial">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Mission">
+        <PropertyRef Name="Mission_Commercial" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

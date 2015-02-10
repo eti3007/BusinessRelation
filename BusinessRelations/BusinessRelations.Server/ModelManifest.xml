@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ModelDocumentManifest xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Documents>
+    <Document FullPath="C:\Developpement\Soat\BusinessRelations\BusinessRelations\BusinessRelations.Server\DataSources\ApplicationData\Collaborateurs.lsml" Checksum="60A745137746D9135E9B6D95726C2AE5966D61D27D3FC99627DC497B5F12E4C3" />
+    <Document FullPath="C:\Developpement\Soat\BusinessRelations\BusinessRelations\BusinessRelations.Server\DataSources\ApplicationData\Commercials.lsml" Checksum="AF9D2F28E338A2EA4FC2AB58944F25E07041BDAF653F68E7FC35DA4B455737CA" />
+    <Document FullPath="C:\Developpement\Soat\BusinessRelations\BusinessRelations\BusinessRelations.Server\DataSources\ApplicationData\Missions.lsml" Checksum="4E7999EFE1738E9DD6901B66AACAFA315AE40833F18BAE63C9CA4A4B4B9E5CC5" />
+    <Document FullPath="C:\Developpement\Soat\BusinessRelations\BusinessRelations\BusinessRelations.Server\Properties\DataSources\ApplicationData.lsml" Checksum="E6FEEAC3B4A850AAC5F0029259A0B9F8C1BD45F2950D17BD8D6664B9422E6AD6" />
+    <Document FullPath="C:\Developpement\Soat\BusinessRelations\BusinessRelations\BusinessRelations.Server\Properties\Service.lsml" Checksum="679C78F29C5AF23E9956A773B0E46DF90F7B86CADA0B79571E5896A1C79F5B70" />
+    <Document FullPath="C:\Developpement\Soat\BusinessRelations\BusinessRelations\BusinessRelations.Server\DataSources\ApplicationData\MissionEnCours.lsml" Checksum="3AFAB2BA1A94BECF5BE9BA4C3D4E35C27118221B6F2D63C6686612F01D20F21B" />
+    <Document FullPath="C:\Developpement\Soat\BusinessRelations\BusinessRelations\BusinessRelations.Server\DataSources\ApplicationData\MissionByClient.lsml" Checksum="884D8AA51F609679ABE71DAE58CF98AAF9071B46A734823FE44C71721A948509" />
+  </Documents>
+</ModelDocumentManifest>
