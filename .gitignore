@@ -1,1 +1,6 @@
 *.suo
+BusinessRelations/bin/Debug/*
+BusinessRelations/BusinessRelations.DesktopClient/Bin/Debug/*
+BusinessRelations/BusinessRelations.DesktopClient/obj/Debug/*
+BusinessRelations/BusinessRelations.Server/bin/Debug/*
+BusinessRelations/BusinessRelations.Server/obj/Debug/*

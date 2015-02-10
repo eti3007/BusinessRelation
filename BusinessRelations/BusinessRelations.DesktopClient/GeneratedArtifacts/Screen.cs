@@ -1231,6 +1231,329 @@ namespace LightSwitchApplication
         }
     }
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+    public sealed partial class MissionByClientListDetail
+        : global::Microsoft.LightSwitch.Framework.Client.ScreenObject<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass>
+    {
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private MissionByClientListDetail() : base("LightSwitchApplication.BusinessRelations.DesktopClient:MissionByClientListDetail")
+        {
+            global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.Initialize(this);
+        }
+
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        public static MissionByClientListDetail CreateInstance()
+        {
+            return new global::LightSwitchApplication.MissionByClientListDetail(
+            );
+        }
+
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MissionByClientListDetail_InitializeDataWorkspace(global::System.Collections.Generic.List<global::Microsoft.LightSwitch.IDataService> saveChangesTo);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MissionByClientListDetail_Created();
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MissionByClientListDetail_Activated();
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MissionByClientListDetail_Saving(ref bool handled);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MissionByClientListDetail_Saved();
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MissionByClientListDetail_Closing(ref bool cancel);
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MissionByClientListDetail_SaveError(global::System.Exception exception, ref bool handled);
+     
+        #region Private Properties
+        
+        /// <summary>
+        /// Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private global::LightSwitchApplication.Application Application
+        {
+            get
+            {
+                return global::LightSwitchApplication.Application.Current;
+            }
+        }
+        
+        /// <summary>
+        /// Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        private global::LightSwitchApplication.DataWorkspace DataWorkspace
+        {
+            get
+            {
+                return (global::LightSwitchApplication.DataWorkspace)((global::Microsoft.LightSwitch.Details.Client.IScreenDetails)this.Details).DataWorkspace;
+            }
+        }
+        
+        #endregion
+ 
+        partial void MissionByClient_SelectionChanged();
+
+        partial void MissionByClient_Changed(global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e);
+
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MissionByClient_Loaded(bool succeeded);
+
+        partial void MissionpNomClient_Changed();
+
+        /// <summary>
+        /// Gets the MissionByClient visual collection. The collection contains all records currently shown on the respective list or grid control.
+        /// </summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::Microsoft.LightSwitch.Framework.Client.VisualCollection<global::LightSwitchApplication.Mission> MissionByClient
+        {
+            get
+            {
+                return global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties.MissionByClient);
+            }
+        }
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MissionByClient_Validate(global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder results);
+ 
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public string MissionpNomClient
+        {
+            get 
+            {
+                return global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties.MissionpNomClient);
+            }
+            set
+            {
+                global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.SetValue(this, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties.MissionpNomClient, value);
+            }
+        }
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
+        partial void MissionpNomClient_Validate(global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder results);
+ 
+        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public sealed class DetailsClass
+            : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySet, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.CommandSet, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.MethodSet>
+        {
+
+            static DetailsClass()
+            {
+                var initializePropertyEntry = global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties.MissionByClient;
+            }
+
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private static global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass>.Entry
+                __MissionByClientListDetailEntry = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass>.Entry(
+                    global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.__MissionByClientListDetail_InvokeInitializeDataWorkspace,
+                    global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.__MissionByClientListDetail_InvokeSavingEvent,
+                    global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.__MissionByClientListDetail_InvokeSavedEvent,
+                    global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.__MissionByClientListDetail_InvokeClosingEvent,
+                    global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.__MissionByClientListDetail_InvokeCreated,
+                    global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.__MissionByClientListDetail_InvokeActivated,
+                    global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.__MissionByClientListDetail_InvokeSaveErrorEvent);
+            private static void __MissionByClientListDetail_InvokeInitializeDataWorkspace(global::LightSwitchApplication.MissionByClientListDetail s, global::System.Collections.Generic.List<global::Microsoft.LightSwitch.IDataService> saveChangesTo)
+            {
+                s.MissionByClientListDetail_InitializeDataWorkspace(saveChangesTo);
+            }
+            private static bool __MissionByClientListDetail_InvokeSavingEvent(global::LightSwitchApplication.MissionByClientListDetail s)
+            {
+                bool handled = false;
+                s.MissionByClientListDetail_Saving(ref handled);
+                return handled;
+            }
+            private static void __MissionByClientListDetail_InvokeSavedEvent(global::LightSwitchApplication.MissionByClientListDetail s)
+            {
+                s.MissionByClientListDetail_Saved();
+            }
+            private static bool __MissionByClientListDetail_InvokeClosingEvent(global::LightSwitchApplication.MissionByClientListDetail s)
+            {
+                bool cancel = false;
+                s.MissionByClientListDetail_Closing(ref cancel);
+                return cancel;
+            }
+            private static void __MissionByClientListDetail_InvokeCreated(global::LightSwitchApplication.MissionByClientListDetail s)
+            {
+                s.MissionByClientListDetail_Created();
+            }
+            private static void __MissionByClientListDetail_InvokeActivated(global::LightSwitchApplication.MissionByClientListDetail s)
+            {
+                s.MissionByClientListDetail_Activated();
+            }
+            private static bool __MissionByClientListDetail_InvokeSaveErrorEvent(global::LightSwitchApplication.MissionByClientListDetail s, global::System.Exception ex)
+            {
+                bool handled = false;
+                s.MissionByClientListDetail_SaveError(ex, ref handled);
+                return handled;
+            }
+
+            public DetailsClass() : base()
+            {
+            }
+
+            public new global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySet Properties
+            {
+                get
+                {
+                    return base.Properties;
+                }
+            }
+
+            public new global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.CommandSet Commands
+            {
+                get
+                {
+                    return base.Commands;
+                }
+            }
+
+            public new global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.MethodSet Methods
+            {
+                get
+                {
+                    return base.Methods;
+                }
+            }
+
+            private global::Microsoft.LightSwitch.IDataServiceQueryable MissionByClientQuery(string pNomClient)
+            {
+                return global::Microsoft.LightSwitch.DataServiceQueryable.Include(
+                    global::Microsoft.LightSwitch.DataServiceQueryable.Include(
+                        this.Screen.DataWorkspace.ApplicationData.MissionByClient(pNomClient),
+                        "Commercial"),
+                    "Collaborateur");
+            }
+
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::LightSwitchApplication.Mission>.Data _MissionByClient;
+
+            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
+            private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenLocalProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, string>.Data _MissionpNomClient;
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class PropertySet
+                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenPropertySet<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass>
+            {
+
+                public global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::LightSwitchApplication.Mission> MissionByClient
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::LightSwitchApplication.Mission>)base.GetItem(global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties.MissionByClient);
+                    }
+                }
+
+                public global::Microsoft.LightSwitch.Details.Framework.Client.ScreenLocalProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, string> MissionpNomClient
+                {
+                    get
+                    {
+                        return (global::Microsoft.LightSwitch.Details.Framework.Client.ScreenLocalProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, string>)base.GetItem(global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties.MissionpNomClient);
+                    }
+                }
+
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class CommandSet
+                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommandSet<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass>
+            {
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            public sealed class MethodSet
+                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethodSet<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass>
+            {
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal sealed class PropertySetProperties
+            {
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::LightSwitchApplication.Mission>.Entry
+                    MissionByClient = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::LightSwitchApplication.Mission>.Entry(
+                        "MissionByClient",
+                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionByClient_Stub,
+                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionByClient_Validate,
+                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionByClient_CreateQuery,
+                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionByClient_SelectionChanged,
+                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionByClient_OnCollectionChanged,
+                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionByClient_OnLoaded);
+                private static void _MissionByClient_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::LightSwitchApplication.Mission>.Data> c, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass d, object sf)
+                {
+                    c(d, ref d._MissionByClient, sf);
+                }
+                private static void _MissionByClient_Validate(global::LightSwitchApplication.MissionByClientListDetail s, global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder r)
+                {
+                    s.MissionByClient_Validate(r);
+                }
+                private static global::Microsoft.LightSwitch.IDataServiceQueryable _MissionByClient_CreateQuery(global::LightSwitchApplication.MissionByClientListDetail.DetailsClass d, object[] args)
+                {
+                    return d.MissionByClientQuery((string)args[0]);
+                }
+                private static void _MissionByClient_SelectionChanged(global::LightSwitchApplication.MissionByClientListDetail s)
+                {
+                    s.MissionByClient_SelectionChanged();
+                }
+                private static void _MissionByClient_OnCollectionChanged(global::LightSwitchApplication.MissionByClientListDetail s, global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+                {
+                    s.MissionByClient_Changed(e);
+                }
+                private static void _MissionByClient_OnLoaded(global::LightSwitchApplication.MissionByClientListDetail s, bool succeeded)
+                {
+                    s.MissionByClient_Loaded(succeeded);
+                }
+
+                public static readonly global::Microsoft.LightSwitch.Details.Framework.Client.ScreenLocalProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, string>.Entry
+                    MissionpNomClient = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenLocalProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, string>.Entry(
+                        "MissionpNomClient",
+                        false,
+                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionpNomClient_Stub,
+                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionpNomClient_Validate,
+                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionpNomClient_OnValueChanged);
+                private static void _MissionpNomClient_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Client.ScreenLocalProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, string>.Data> c, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass d, object sf)
+                {
+                    c(d, ref d._MissionpNomClient, sf);
+                }
+                private static void _MissionpNomClient_Validate(global::LightSwitchApplication.MissionByClientListDetail s, global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder r)
+                {
+                    s.MissionpNomClient_Validate(r);
+                }
+                private static void _MissionpNomClient_OnValueChanged(global::LightSwitchApplication.MissionByClientListDetail s)
+                {
+                    s.MissionpNomClient_Changed();
+                }
+
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal sealed class CommandSetProperties
+            {
+            }
+
+            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            internal sealed class MethodSetProperties
+            {
+            }
+        }
+    }
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
     public sealed partial class MissionCreateNew
         : global::Microsoft.LightSwitch.Framework.Client.ScreenObject<global::LightSwitchApplication.MissionCreateNew, global::LightSwitchApplication.MissionCreateNew.DetailsClass>
     {
@@ -2012,329 +2335,6 @@ namespace LightSwitchApplication
                     d.Screen.gridEditSelected_Execute();
                 }
 
-            }
-        }
-    }
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-    public sealed partial class MissionByClientListDetail
-        : global::Microsoft.LightSwitch.Framework.Client.ScreenObject<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass>
-    {
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        private MissionByClientListDetail() : base("LightSwitchApplication.BusinessRelations.DesktopClient:MissionByClientListDetail")
-        {
-            global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.Initialize(this);
-        }
-
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        public static MissionByClientListDetail CreateInstance()
-        {
-            return new global::LightSwitchApplication.MissionByClientListDetail(
-            );
-        }
-
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void MissionByClientListDetail_InitializeDataWorkspace(global::System.Collections.Generic.List<global::Microsoft.LightSwitch.IDataService> saveChangesTo);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void MissionByClientListDetail_Created();
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void MissionByClientListDetail_Activated();
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void MissionByClientListDetail_Saving(ref bool handled);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void MissionByClientListDetail_Saved();
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void MissionByClientListDetail_Closing(ref bool cancel);
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void MissionByClientListDetail_SaveError(global::System.Exception exception, ref bool handled);
-     
-        #region Private Properties
-        
-        /// <summary>
-        /// Gets the Application object for this application.  The Application object provides access to active screens, methods to open screens and access to the current user.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        private global::LightSwitchApplication.Application Application
-        {
-            get
-            {
-                return global::LightSwitchApplication.Application.Current;
-            }
-        }
-        
-        /// <summary>
-        /// Gets the containing data workspace.  The data workspace provides access to all data sources in the application.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        private global::LightSwitchApplication.DataWorkspace DataWorkspace
-        {
-            get
-            {
-                return (global::LightSwitchApplication.DataWorkspace)((global::Microsoft.LightSwitch.Details.Client.IScreenDetails)this.Details).DataWorkspace;
-            }
-        }
-        
-        #endregion
- 
-        partial void MissionByClient_SelectionChanged();
-
-        partial void MissionByClient_Changed(global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e);
-
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void MissionByClient_Loaded(bool succeeded);
-
-        partial void MissionpNomClient_Changed();
-
-        /// <summary>
-        /// Gets the MissionByClient visual collection. The collection contains all records currently shown on the respective list or grid control.
-        /// </summary>
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public global::Microsoft.LightSwitch.Framework.Client.VisualCollection<global::LightSwitchApplication.Mission> MissionByClient
-        {
-            get
-            {
-                return global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties.MissionByClient);
-            }
-        }
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void MissionByClient_Validate(global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder results);
- 
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public string MissionpNomClient
-        {
-            get 
-            {
-                return global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.GetValue(this, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties.MissionpNomClient);
-            }
-            set
-            {
-                global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.SetValue(this, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties.MissionpNomClient, value);
-            }
-        }
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        partial void MissionpNomClient_Validate(global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder results);
- 
-        [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        public sealed class DetailsClass
-            : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySet, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.CommandSet, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.MethodSet>
-        {
-
-            static DetailsClass()
-            {
-                var initializePropertyEntry = global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties.MissionByClient;
-            }
-
-            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private static global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass>.Entry
-                __MissionByClientListDetailEntry = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenDetails<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass>.Entry(
-                    global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.__MissionByClientListDetail_InvokeInitializeDataWorkspace,
-                    global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.__MissionByClientListDetail_InvokeSavingEvent,
-                    global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.__MissionByClientListDetail_InvokeSavedEvent,
-                    global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.__MissionByClientListDetail_InvokeClosingEvent,
-                    global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.__MissionByClientListDetail_InvokeCreated,
-                    global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.__MissionByClientListDetail_InvokeActivated,
-                    global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.__MissionByClientListDetail_InvokeSaveErrorEvent);
-            private static void __MissionByClientListDetail_InvokeInitializeDataWorkspace(global::LightSwitchApplication.MissionByClientListDetail s, global::System.Collections.Generic.List<global::Microsoft.LightSwitch.IDataService> saveChangesTo)
-            {
-                s.MissionByClientListDetail_InitializeDataWorkspace(saveChangesTo);
-            }
-            private static bool __MissionByClientListDetail_InvokeSavingEvent(global::LightSwitchApplication.MissionByClientListDetail s)
-            {
-                bool handled = false;
-                s.MissionByClientListDetail_Saving(ref handled);
-                return handled;
-            }
-            private static void __MissionByClientListDetail_InvokeSavedEvent(global::LightSwitchApplication.MissionByClientListDetail s)
-            {
-                s.MissionByClientListDetail_Saved();
-            }
-            private static bool __MissionByClientListDetail_InvokeClosingEvent(global::LightSwitchApplication.MissionByClientListDetail s)
-            {
-                bool cancel = false;
-                s.MissionByClientListDetail_Closing(ref cancel);
-                return cancel;
-            }
-            private static void __MissionByClientListDetail_InvokeCreated(global::LightSwitchApplication.MissionByClientListDetail s)
-            {
-                s.MissionByClientListDetail_Created();
-            }
-            private static void __MissionByClientListDetail_InvokeActivated(global::LightSwitchApplication.MissionByClientListDetail s)
-            {
-                s.MissionByClientListDetail_Activated();
-            }
-            private static bool __MissionByClientListDetail_InvokeSaveErrorEvent(global::LightSwitchApplication.MissionByClientListDetail s, global::System.Exception ex)
-            {
-                bool handled = false;
-                s.MissionByClientListDetail_SaveError(ex, ref handled);
-                return handled;
-            }
-
-            public DetailsClass() : base()
-            {
-            }
-
-            public new global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySet Properties
-            {
-                get
-                {
-                    return base.Properties;
-                }
-            }
-
-            public new global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.CommandSet Commands
-            {
-                get
-                {
-                    return base.Commands;
-                }
-            }
-
-            public new global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.MethodSet Methods
-            {
-                get
-                {
-                    return base.Methods;
-                }
-            }
-
-            private global::Microsoft.LightSwitch.IDataServiceQueryable MissionByClientQuery(string pNomClient)
-            {
-                return global::Microsoft.LightSwitch.DataServiceQueryable.Include(
-                    global::Microsoft.LightSwitch.DataServiceQueryable.Include(
-                        this.Screen.DataWorkspace.ApplicationData.MissionByClient(pNomClient),
-                        "Commercial"),
-                    "Collaborateur");
-            }
-
-            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::LightSwitchApplication.Mission>.Data _MissionByClient;
-
-            [global::System.Diagnostics.DebuggerBrowsable(global::System.Diagnostics.DebuggerBrowsableState.Never)]
-            private global::Microsoft.LightSwitch.Details.Framework.Client.ScreenLocalProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, string>.Data _MissionpNomClient;
-
-            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public sealed class PropertySet
-                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenPropertySet<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass>
-            {
-
-                public global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::LightSwitchApplication.Mission> MissionByClient
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::LightSwitchApplication.Mission>)base.GetItem(global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties.MissionByClient);
-                    }
-                }
-
-                public global::Microsoft.LightSwitch.Details.Framework.Client.ScreenLocalProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, string> MissionpNomClient
-                {
-                    get
-                    {
-                        return (global::Microsoft.LightSwitch.Details.Framework.Client.ScreenLocalProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, string>)base.GetItem(global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties.MissionpNomClient);
-                    }
-                }
-
-            }
-
-            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public sealed class CommandSet
-                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCommandSet<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass>
-            {
-            }
-
-            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            public sealed class MethodSet
-                : global::Microsoft.LightSwitch.Details.Framework.Client.ScreenMethodSet<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass>
-            {
-            }
-
-            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            internal sealed class PropertySetProperties
-            {
-
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::LightSwitchApplication.Mission>.Entry
-                    MissionByClient = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::LightSwitchApplication.Mission>.Entry(
-                        "MissionByClient",
-                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionByClient_Stub,
-                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionByClient_Validate,
-                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionByClient_CreateQuery,
-                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionByClient_SelectionChanged,
-                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionByClient_OnCollectionChanged,
-                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionByClient_OnLoaded);
-                private static void _MissionByClient_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Client.ScreenCollectionProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::LightSwitchApplication.Mission>.Data> c, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass d, object sf)
-                {
-                    c(d, ref d._MissionByClient, sf);
-                }
-                private static void _MissionByClient_Validate(global::LightSwitchApplication.MissionByClientListDetail s, global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder r)
-                {
-                    s.MissionByClient_Validate(r);
-                }
-                private static global::Microsoft.LightSwitch.IDataServiceQueryable _MissionByClient_CreateQuery(global::LightSwitchApplication.MissionByClientListDetail.DetailsClass d, object[] args)
-                {
-                    return d.MissionByClientQuery((string)args[0]);
-                }
-                private static void _MissionByClient_SelectionChanged(global::LightSwitchApplication.MissionByClientListDetail s)
-                {
-                    s.MissionByClient_SelectionChanged();
-                }
-                private static void _MissionByClient_OnCollectionChanged(global::LightSwitchApplication.MissionByClientListDetail s, global::System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
-                {
-                    s.MissionByClient_Changed(e);
-                }
-                private static void _MissionByClient_OnLoaded(global::LightSwitchApplication.MissionByClientListDetail s, bool succeeded)
-                {
-                    s.MissionByClient_Loaded(succeeded);
-                }
-
-                public static readonly global::Microsoft.LightSwitch.Details.Framework.Client.ScreenLocalProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, string>.Entry
-                    MissionpNomClient = new global::Microsoft.LightSwitch.Details.Framework.Client.ScreenLocalProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, string>.Entry(
-                        "MissionpNomClient",
-                        false,
-                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionpNomClient_Stub,
-                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionpNomClient_Validate,
-                        global::LightSwitchApplication.MissionByClientListDetail.DetailsClass.PropertySetProperties._MissionpNomClient_OnValueChanged);
-                private static void _MissionpNomClient_Stub(global::Microsoft.LightSwitch.Details.Framework.Base.DetailsCallback<global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, global::Microsoft.LightSwitch.Details.Framework.Client.ScreenLocalProperty<global::LightSwitchApplication.MissionByClientListDetail, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass, string>.Data> c, global::LightSwitchApplication.MissionByClientListDetail.DetailsClass d, object sf)
-                {
-                    c(d, ref d._MissionpNomClient, sf);
-                }
-                private static void _MissionpNomClient_Validate(global::LightSwitchApplication.MissionByClientListDetail s, global::Microsoft.LightSwitch.Framework.Client.ScreenValidationResultsBuilder r)
-                {
-                    s.MissionpNomClient_Validate(r);
-                }
-                private static void _MissionpNomClient_OnValueChanged(global::LightSwitchApplication.MissionByClientListDetail s)
-                {
-                    s.MissionpNomClient_Changed();
-                }
-
-            }
-
-            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            internal sealed class CommandSetProperties
-            {
-            }
-
-            [global::System.ComponentModel.EditorBrowsable(global::System.ComponentModel.EditorBrowsableState.Never)]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.LightSwitch.BuildTasks.CodeGen", "12.1.0.0")]
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            internal sealed class MethodSetProperties
-            {
             }
         }
     }
